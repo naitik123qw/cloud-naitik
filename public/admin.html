@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>Admin - FileVault</title>
+
+  <link
+    rel="stylesheet"
+    href="/css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+  <h1>⚙️ FileVault Admin</h1>
+
+  <a href="/" class="admin-link">
+    User Page
+  </a>
+
+</header>
+
+<main>
+
+  <section id="loginSection">
+
+    <div class="admin-box">
+
+      <h2>Admin Login</h2>
+
+      <input
+        id="username"
+        placeholder="Username">
+
+      <input
+        id="password"
+        type="password"
+        placeholder="Password">
+
+      <button onclick="login()">
+        Login
+      </button>
+
+      <p id="loginMessage"></p>
+
+    </div>
+
+  </section>
+
+
+  <section
+    id="dashboard"
+    style="display:none">
+
+    <h2>Upload File</h2>
+
+    <input
+      id="fileInput"
+      type="file">
+
+    <button onclick="uploadFile()">
+      Upload
+    </button>
+
+    <p id="uploadStatus"></p>
+
+
+    <hr>
+
+
+    <h2>Access Requests</h2>
+
+    <div id="requests"></div>
+
+
+    <hr>
+
+
+    <h2>Uploaded Files</h2>
+
+    <div id="adminFiles"></div>
+
+  </section>
+
+</main>
+
+<script src="/js/admin.js"></script>
+
+</body>
+
+</html>
